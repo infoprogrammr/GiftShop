@@ -1,5 +1,6 @@
 
-public class GiftShop {
+import java.util.*;
+public class Challenge {
    public static void main(String[] arguments) {
         Storefront store = new Storefront();
         store.addItem("C01", "MUG", "9.99", "150");
@@ -20,8 +21,7 @@ public class GiftShop {
 }
 
 
-import java.util.*;
-public class Storefront {
+class Storefront {
     private LinkedList catalog = new LinkedList();
 
     public void addItem(String id, String name, String price,
@@ -45,7 +45,7 @@ public class Storefront {
 }
 
 
-public class Item implements Comparable {
+ class Item implements Comparable {
     private String id;
     private String name;
     private double retail;
